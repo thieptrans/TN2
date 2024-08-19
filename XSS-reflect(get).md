@@ -14,5 +14,5 @@ kèm theo URL.
 Bước 2: Kiểm tra lỗi XSS
 
 Sau khi đã xác định được vị trí có khả năng mắc lỗi XSS, tiến hành kiểm tra 
-bằng cách thử truyền vào 1 đoạn mã java script *<script>alert("XSS")</script>* để
+bằng cách thử truyền vào 1 đoạn mã java script **<script>alert("XSS")</script>** để
 thực hiện tạo 1 popup thông báo để kiểm tra xem site có bị lỗi XSS hay không?
