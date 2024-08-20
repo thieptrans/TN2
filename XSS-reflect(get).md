@@ -54,3 +54,9 @@ Code php crawl cookie:
 </html>
 ```
 
+Tiếp theo, lừa người dùng click vào link phishing
+
+![image](https://github.com/user-attachments/assets/009dbf69-a15d-4145-be39-23f1c6a4b5ea)
+
+Khi mục tiêu ấn click vào link sẽ bị chuyển hướng tới web đã bị đệm javascript, sau đó sẽ bị crawl cookie về cookie.txt tại máy attacker:
+
