@@ -1,4 +1,4 @@
-### Xác định lỗi XSS
+![image](https://github.com/user-attachments/assets/05cd7500-bd2b-431c-a6a4-a21673b70295)### Xác định lỗi XSS
 
 Thử nhập họ tên vào ô tìm kiếm ta thấy nó trả về tên ta nhập
 
@@ -16,4 +16,10 @@ Lí do đoạn js trước đó không chạy là do đầu vào đang nằm s�
 
 >var JSONResponseString = '{"movies":[{"response":"check here??? Sorry, we don&#039;t have that movie :("}]}';
 
-Đoạn Js này được kết thúc bởi **"}]}';**
+Đoạn Js này được kết thúc bởi ` "}]}';`
+
+Giờ ta cần đóng đoạn js đó lại và truyền một js khác vào ` "}]}';alert("Hacked by Thiep")</script>`
+
+![image](https://github.com/user-attachments/assets/5d2ccb24-4da6-4fb2-97de-c69fdfdac90a)
+
+--> Xác định web dính XSS
