@@ -76,10 +76,12 @@ Kết quả sau khi add cookie ta đã login mà không cần mật khẩu
 
 ### Cách khắc phục
 + Lọc và kiểm tra dữ liệu đầu vào
+	- Đảm bảo rằng mọi dữ liệu đầu vào từ người dùng đều được kiểm tra và làm sạch trước khi được sử dụng trong trang web.
 
-- Đảm bảo rằng mọi dữ liệu đầu vào từ người dùng đều được kiểm tra và làm sạch trước khi được sử dụng trong trang web.
-- Xóa bỏ hoặc mã hóa các ký tự đặc biệt có thể được sử dụng trong tấn công XSS (như <, >, ", ', &).
-- Sử dụng các thư viện hoặc công cụ hỗ trợ như OWASP AntiSamy, DOMPurify để làm sạch đầu vào.
+	- Xóa bỏ hoặc mã hóa các ký tự đặc biệt có thể được sử dụng trong tấn công XSS (như <, >, ", ', &).
+
+	- Sử dụng các thư viện hoặc công cụ hỗ trợ như OWASP AntiSamy, DOMPurify để làm sạch đầu vào.
+
 + Thoát ký tự đầu ra
-- Đối với các ngôn ngữ kịch bản như HTML, JavaScript, thoát ký tự đặc biệt trước khi đưa dữ liệu từ người dùng ra trang web.
+	- Đối với các ngôn ngữ kịch bản như HTML, JavaScript, thoát ký tự đặc biệt trước khi đưa dữ liệu từ người dùng ra trang web.
 
