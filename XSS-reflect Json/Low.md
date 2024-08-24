@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/05cd7500-bd2b-431c-a6a4-a21673b70295)### Xác định lỗi XSS
+### Xác định lỗi XSS
+
+![image](https://github.com/user-attachments/assets/05cd7500-bd2b-431c-a6a4-a21673b70295)
 
 Thử nhập họ tên vào ô tìm kiếm ta thấy nó trả về tên ta nhập
 
@@ -23,3 +25,11 @@ Giờ ta cần đóng đoạn js đó lại và truyền một js khác vào ` "
 ![image](https://github.com/user-attachments/assets/5d2ccb24-4da6-4fb2-97de-c69fdfdac90a)
 
 --> Xác định web dính XSS
+
+### Khai thác
+
+Dùng file get.php như case XSS get mức Low
+
+Source phishing:
+
+``` html
