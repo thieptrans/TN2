@@ -14,3 +14,9 @@ Thử chèn một đoạn js vào xem
 > <script>alert("XSS")</script>
 
 ![image](https://github.com/user-attachments/assets/c20851a1-3942-4eac-881a-0b11c3cafb9d)
+
+Xác định dính XSS
+
+### Khai thác
+
+Sử dụng trang web phishing như bài eval
