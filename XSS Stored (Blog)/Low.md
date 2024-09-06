@@ -17,6 +17,10 @@ Thử chèn một đoạn js vào xem
 
 Xác định dính XSS
 
+View source thấy đoạn js đã được lưu vào server nên mỗi khi ta nhập cái gì đó thì cái xss cũ lại chạy
+
+![image](https://github.com/user-attachments/assets/2f979c09-6ea0-49ff-b7a5-788f56383e33)
+
 ### Khai thác
 
 Sử dụng trang web phishing như bài eval
